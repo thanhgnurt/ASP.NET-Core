@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Tự học ICT</title>
+    <style>
+        .header {
+            color: cadetblue;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Razor Pages tutorial</h1>
+    <hr />
+
+    @RenderBody()
+
+    <hr />
+    <h2 class="footer">©tuhocict.com - @DateTime.Now.Year</h2>
+    <!--Insert section-->
+    @RenderSection("NameSection", false)
+</body>
+</html>
+<!--có thể đặt file _Layout trong thư mục Shared (có thể truy xuất ở bất kỳ đâu mà không cần đường dẫn cụ thể)-->
